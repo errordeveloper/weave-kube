@@ -47,14 +47,6 @@ spec:
           resources:
             requests:
               cpu: 10m
-        - name: weave-npc
-          image: weaveworks/weave-npc:latest
-          imagePullPolicy: Always
-          resources:
-            requests:
-              cpu: 10m
-          securityContext:
-            privileged: true
       restartPolicy: Always
       volumes:
         - name: weavedb
